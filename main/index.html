@@ -12,9 +12,63 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | QR code component</title>
 
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --light-gray: hsl(212, 45%, 89%);
+        --grayish-blue: hsl(220, 15%, 55%);
+        --dark-blue: hsl(218, 44%, 22%);
+      }
+
+      body {
+        background-color: var(--light-gray);
+        font-size: 15px;
+        font-family: "Outfit", sans-serif;
+      }
+
+      main {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        box-sizing: border-box;
+        border-radius: 1.25rem;
+        width: 320px;
+        height: 497px;
+        margin: 6rem auto 5rem;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 0.75rem;
+      }
+
+      h2 {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 1rem;
+        padding: 0 1rem;
+        text-align: center;
+        color: var(--grayish-blue);
+      }
+      
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -29,7 +83,7 @@
       <figure>
         <img src="./images/image-qr-code.png" />
       </figure>
-      <h1>Improve your front-end skills by building projects</h1>
+      <h2>Improve your front-end skills by building projects</h2>
       <p>
         Scan the QR code to visit Frontend Mentor and take your coding skills to
         the next level
