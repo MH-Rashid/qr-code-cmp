@@ -10,23 +10,39 @@
   --dark-blue: hsl(218, 44%, 22%);
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--light-gray);
   font-family: "Outfit", sans-serif;
   font-size: 15px;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  box-sizing: inherit;
 }
 
 main {
+  width: 320px;
+  height: 497px;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  padding-bottom: 15px;
   box-sizing: border-box;
   border-radius: 1.25rem;
-  width: 320px;
-  height: 497px;
   text-align: center;
-  margin: 6rem auto 5rem;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 img {
@@ -41,13 +57,16 @@ p {
   color: var(--grayish-blue);
 }
 
-.attribution {
+footer {
   font-size: 11px;
+  padding-bottom: 10px;
   text-align: center;
-  width: 300px;
-  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
-.attribution a {
+footer a {
   color: hsl(228, 45%, 44%);
 }
